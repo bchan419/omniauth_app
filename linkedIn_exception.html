@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<!-- saved from url=(0114)http://localhost:3000/auth/linkedin/callback?oauth_token=f3a4879c-83d9-4085-aeb9-f14def576986&oauth_verifier=37420 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>Action Controller: Exception caught</title>
+  <style>
+    body { background-color: #fff; color: #333; }
+
+    body, p, ol, ul, td {
+      font-family: helvetica, verdana, arial, sans-serif;
+      font-size:   13px;
+      line-height: 18px;
+    }
+
+    pre {
+      background-color: #eee;
+      padding: 10px;
+      font-size: 11px;
+      white-space: pre-wrap;
+    }
+
+    a { color: #000; }
+    a:visited { color: #666; }
+    a:hover { color: #fff; background-color:#000; }
+  </style>
+</head>
+<body>
+
+<h1>
+  RuntimeError
+    in SessionsController#create
+</h1>
+<pre>--- !ruby/hash:OmniAuth::AuthHash
+provider: linkedin
+uid: bGBeM4Y-t9
+info: !ruby/hash:OmniAuth::AuthHash::InfoHash
+  email: bernard_chan99@hotmail.com
+  first_name: Bernard
+  last_name: Chan
+  name: Bernard Chan
+  headline: Intrapreneur turned Entrepreneur, Digital Advertising, Here to help
+  description: Intrapreneur turned Entrepreneur, Digital Advertising, Here to help
+  image: http://m3.licdn.com/mpr/mprx/0_uBxCSynlBO-6lF862cjjSOQpcZv6PC36mKwjS0v_HOT9u69Qhl7mix3SJvzJr5hoSNgyCZFnseAg
+  industry: Internet
+  urls: !ruby/hash:Hashie::Mash
+    public_profile: http://www.linkedin.com/pub/bernard-chan/0/96/5a1
+credentials: !ruby/hash:Hashie::Mash
+  token: 433e36c4-a7b5-44da-b903-b01adba84cd5
+  secret: 3404244f-d78f-40a5-9204-e7b0509dbed5
+extra: !ruby/hash:Hashie::Mash
+  access_token: !ruby/object:OAuth::AccessToken
+    token: 433e36c4-a7b5-44da-b903-b01adba84cd5
+    secret: 3404244f-d78f-40a5-9204-e7b0509dbed5
+    consumer: !ruby/object:OAuth::Consumer
+      key: f2cs8fxutogk
+      secret: Jh4ARt9Dw1noOQee
+      options:
+        :signature_method: HMAC-SHA1
+        :request_token_path: /uas/oauth/requestToken
+        :authorize_path: /oauth/authorize
+        :access_token_path: /uas/oauth/accessToken
+        :proxy: 
+        :scheme: :header
+        :http_method: :post
+        :oauth_version: '1.0'
+        :site: https://api.linkedin.com
+        :authorize_url: https://www.linkedin.com/uas/oauth/authenticate
+      http: !ruby/object:Net::HTTP
+        address: api.linkedin.com
+        port: 443
+        curr_http_version: '1.1'
+        no_keepalive_server: false
+        close_on_empty_response: false
+        socket: 
+        started: false
+        open_timeout: 30
+        read_timeout: 30
+        continue_timeout: 
+        debug_output: 
+        use_ssl: true
+        ssl_context: !ruby/object:OpenSSL::SSL::SSLContext
+          cert: 
+          key: 
+          client_ca: 
+          ca_file: 
+          ca_path: 
+          timeout: 
+          verify_mode: 0
+          verify_depth: 
+          verify_callback: 
+          options: 4095
+          cert_store: 
+          extra_chain_cert: 
+          client_cert_cb: 
+          tmp_dh_callback: 
+          session_id_context: 
+          session_get_cb: 
+          session_new_cb: 
+          session_remove_cb: 
+          servername_cb: 
+        enable_post_connection_check: true
+        compression: 
+        sspi_enabled: false
+        ssl_version: 
+        key: 
+        cert: 
+        ca_file: 
+        ca_path: 
+        cert_store: 
+        ciphers: 
+        verify_mode: 0
+        verify_callback: 
+        verify_depth: 
+        ssl_timeout: 
+      http_method: :post
+      uri: !ruby/object:URI::HTTPS
+        scheme: https
+        user: 
+        password: 
+        host: api.linkedin.com
+        port: 443
+        path: ''
+        query: 
+        opaque: 
+        registry: 
+        fragment: 
+        parser: 
+    params:
+      :oauth_token: 433e36c4-a7b5-44da-b903-b01adba84cd5
+      oauth_token: 433e36c4-a7b5-44da-b903-b01adba84cd5
+      :oauth_token_secret: 3404244f-d78f-40a5-9204-e7b0509dbed5
+      oauth_token_secret: 3404244f-d78f-40a5-9204-e7b0509dbed5
+      :oauth_expires_in: '5183999'
+      oauth_expires_in: '5183999'
+      :oauth_authorization_expires_in: '5183999'
+      oauth_authorization_expires_in: '5183999'
+    response: !ruby/object:Net::HTTPOK
+      http_version: '1.1'
+      code: '200'
+      message: OK
+      header:
+        server:
+        - Apache-Coyote/1.1
+        x-li-request-id:
+        - F0CTFP3FTP
+        vary:
+        - ! '*'
+        x-li-format:
+        - json
+        content-type:
+        - application/json;charset=UTF-8
+        transfer-encoding:
+        - chunked
+        date:
+        - Tue, 06 Nov 2012 19:23:24 GMT
+      body: ! "{\n  \"emailAddress\": \"bernard_chan99@hotmail.com\",\n  \"firstName\":
+        \"Bernard\",\n  \"headline\": \"Intrapreneur turned Entrepreneur, Digital
+        Advertising, Here to help\",\n  \"id\": \"bGBeM4Y-t9\",\n  \"industry\": \"Internet\",\n
+        \ \"lastName\": \"Chan\",\n  \"location\": {\n    \"country\": {\"code\":
+        \"hk\"},\n    \"name\": \"Hong Kong\"\n  },\n  \"pictureUrl\": \"http://m3.licdn.com/mpr/mprx/0_uBxCSynlBO-6lF862cjjSOQpcZv6PC36mKwjS0v_HOT9u69Qhl7mix3SJvzJr5hoSNgyCZFnseAg\",\n
+        \ \"publicProfileUrl\": \"http://www.linkedin.com/pub/bernard-chan/0/96/5a1\"\n}"
+      read: true
+      socket: 
+      body_exist: true
+  raw_info: !ruby/hash:Hashie::Mash
+    emailAddress: bernard_chan99@hotmail.com
+    firstName: Bernard
+    headline: Intrapreneur turned Entrepreneur, Digital Advertising, Here to help
+    id: bGBeM4Y-t9
+    industry: Internet
+    lastName: Chan
+    location: !ruby/hash:Hashie::Mash
+      country: !ruby/hash:Hashie::Mash
+        code: hk
+      name: Hong Kong
+    pictureUrl: http://m3.licdn.com/mpr/mprx/0_uBxCSynlBO-6lF862cjjSOQpcZv6PC36mKwjS0v_HOT9u69Qhl7mix3SJvzJr5hoSNgyCZFnseAg
+    publicProfileUrl: http://www.linkedin.com/pub/bernard-chan/0/96/5a1
+</pre>
+
+
+<p><code>Rails.root: /Users/student/Dev/am/bernardc/omniauth_app</code></p>
+
+<div id="traces">
+    <a href="http://localhost:3000/auth/linkedin/callback?oauth_token=f3a4879c-83d9-4085-aeb9-f14def576986&oauth_verifier=37420#" onclick="document.getElementById(&#39;Framework-Trace&#39;).style.display=&#39;none&#39;;document.getElementById(&#39;Full-Trace&#39;).style.display=&#39;none&#39;;document.getElementById(&#39;Application-Trace&#39;).style.display=&#39;block&#39;;; return false;">Application Trace</a> |
+    <a href="http://localhost:3000/auth/linkedin/callback?oauth_token=f3a4879c-83d9-4085-aeb9-f14def576986&oauth_verifier=37420#" onclick="document.getElementById(&#39;Application-Trace&#39;).style.display=&#39;none&#39;;document.getElementById(&#39;Full-Trace&#39;).style.display=&#39;none&#39;;document.getElementById(&#39;Framework-Trace&#39;).style.display=&#39;block&#39;;; return false;">Framework Trace</a> |
+    <a href="http://localhost:3000/auth/linkedin/callback?oauth_token=f3a4879c-83d9-4085-aeb9-f14def576986&oauth_verifier=37420#" onclick="document.getElementById(&#39;Application-Trace&#39;).style.display=&#39;none&#39;;document.getElementById(&#39;Framework-Trace&#39;).style.display=&#39;none&#39;;document.getElementById(&#39;Full-Trace&#39;).style.display=&#39;block&#39;;; return false;">Full Trace</a> 
+
+    <div id="Application-Trace" style="display: block;">
+      <pre><code>app/controllers/sessions_controller.rb:5:in `create'</code></pre>
+    </div>
+    <div id="Framework-Trace" style="display: none;">
+      <pre><code>actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+actionpack (3.2.8) lib/abstract_controller/base.rb:167:in `process_action'
+actionpack (3.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+actionpack (3.2.8) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+activesupport (3.2.8) lib/active_support/callbacks.rb:414:in `_run__4233382209792847325__process_action__4263492206713965130__callbacks'
+activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+actionpack (3.2.8) lib/abstract_controller/callbacks.rb:17:in `process_action'
+actionpack (3.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+actionpack (3.2.8) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+actionpack (3.2.8) lib/abstract_controller/base.rb:121:in `process'
+actionpack (3.2.8) lib/abstract_controller/rendering.rb:45:in `process'
+actionpack (3.2.8) lib/action_controller/metal.rb:203:in `dispatch'
+actionpack (3.2.8) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+actionpack (3.2.8) lib/action_controller/metal.rb:246:in `block in action'
+actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `call'
+actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:36:in `call'
+journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+journey (1.0.4) lib/journey/router.rb:56:in `each'
+journey (1.0.4) lib/journey/router.rb:56:in `call'
+actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+omniauth (1.1.1) lib/omniauth/strategy.rb:394:in `call_app!'
+omniauth (1.1.1) lib/omniauth/strategy.rb:356:in `callback_phase'
+omniauth-oauth (1.0.1) lib/omniauth/strategies/oauth.rb:58:in `callback_phase'
+omniauth (1.1.1) lib/omniauth/strategy.rb:219:in `callback_call'
+omniauth (1.1.1) lib/omniauth/strategy.rb:175:in `call!'
+omniauth (1.1.1) lib/omniauth/strategy.rb:157:in `call'
+omniauth (1.1.1) lib/omniauth/builder.rb:48:in `call'
+actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+rack (1.4.1) lib/rack/etag.rb:23:in `call'
+rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__1966795069395533641__call__2585490355579855091__callbacks'
+activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+rack (1.4.1) lib/rack/lock.rb:15:in `call'
+actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+railties (3.2.8) lib/rails/engine.rb:479:in `call'
+railties (3.2.8) lib/rails/application.rb:223:in `call'
+rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+/Users/student/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/Users/student/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/Users/student/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'</code></pre>
+    </div>
+    <div id="Full-Trace" style="display: none;">
+      <pre><code>app/controllers/sessions_controller.rb:5:in `create'
+actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+actionpack (3.2.8) lib/abstract_controller/base.rb:167:in `process_action'
+actionpack (3.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+actionpack (3.2.8) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+activesupport (3.2.8) lib/active_support/callbacks.rb:414:in `_run__4233382209792847325__process_action__4263492206713965130__callbacks'
+activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+actionpack (3.2.8) lib/abstract_controller/callbacks.rb:17:in `process_action'
+actionpack (3.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+activesupport (3.2.8) lib/active_support/notifications.rb:123:in `block in instrument'
+activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+actionpack (3.2.8) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+actionpack (3.2.8) lib/abstract_controller/base.rb:121:in `process'
+actionpack (3.2.8) lib/abstract_controller/rendering.rb:45:in `process'
+actionpack (3.2.8) lib/action_controller/metal.rb:203:in `dispatch'
+actionpack (3.2.8) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+actionpack (3.2.8) lib/action_controller/metal.rb:246:in `block in action'
+actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `call'
+actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:36:in `call'
+journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+journey (1.0.4) lib/journey/router.rb:56:in `each'
+journey (1.0.4) lib/journey/router.rb:56:in `call'
+actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+omniauth (1.1.1) lib/omniauth/strategy.rb:394:in `call_app!'
+omniauth (1.1.1) lib/omniauth/strategy.rb:356:in `callback_phase'
+omniauth-oauth (1.0.1) lib/omniauth/strategies/oauth.rb:58:in `callback_phase'
+omniauth (1.1.1) lib/omniauth/strategy.rb:219:in `callback_call'
+omniauth (1.1.1) lib/omniauth/strategy.rb:175:in `call!'
+omniauth (1.1.1) lib/omniauth/strategy.rb:157:in `call'
+omniauth (1.1.1) lib/omniauth/builder.rb:48:in `call'
+actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+rack (1.4.1) lib/rack/etag.rb:23:in `call'
+rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__1966795069395533641__call__2585490355579855091__callbacks'
+activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+rack (1.4.1) lib/rack/lock.rb:15:in `call'
+actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+railties (3.2.8) lib/rails/engine.rb:479:in `call'
+railties (3.2.8) lib/rails/application.rb:223:in `call'
+rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+/Users/student/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/Users/student/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/Users/student/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'</code></pre>
+    </div>
+</div>
+
+
+
+<h2 style="margin-top: 30px">Request</h2>
+<p><b>Parameters</b>: </p><pre>{"oauth_token"=&gt;"f3a4879c-83d9-4085-aeb9-f14def576986",
+ "oauth_verifier"=&gt;"37420",
+ "provider"=&gt;"linkedin"}</pre><p></p>
+
+<p><a href="http://localhost:3000/auth/linkedin/callback?oauth_token=f3a4879c-83d9-4085-aeb9-f14def576986&oauth_verifier=37420#" onclick="document.getElementById(&#39;session_dump&#39;).style.display=&#39;block&#39;; return false;">Show session dump</a></p>
+<div id="session_dump" style="display:none"><pre>_csrf_token: "3p8RWddndSh+BvFgY1mrn2BtwE70zIbAdasmMOwK2ls="
+oauth: {"linkedin"=&gt;{"callback_confirmed"=&gt;true}}
+session_id: "fc9c8b7ea56dc5088b71d5860264a7f9"</pre></div>
+
+<p><a href="http://localhost:3000/auth/linkedin/callback?oauth_token=f3a4879c-83d9-4085-aeb9-f14def576986&oauth_verifier=37420#" onclick="document.getElementById(&#39;env_dump&#39;).style.display=&#39;block&#39;; return false;">Show env dump</a></p>
+<div id="env_dump" style="display:none"><pre>GATEWAY_INTERFACE: "CGI/1.1"
+HTTP_ACCEPT: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+HTTP_ACCEPT_CHARSET: "ISO-8859-1,utf-8;q=0.7,*;q=0.3"
+HTTP_ACCEPT_ENCODING: "gzip,deflate,sdch"
+HTTP_ACCEPT_LANGUAGE: "en-US,en;q=0.8"
+REMOTE_ADDR: "127.0.0.1"
+REMOTE_HOST: "localhost"
+SERVER_NAME: "localhost"
+SERVER_PROTOCOL: "HTTP/1.1"</pre></div>
+
+
+<h2 style="margin-top: 30px">Response</h2>
+<p><b>Headers</b>: </p><pre>None</pre><p></p>
+
+
+
+
+
+</body></html>
